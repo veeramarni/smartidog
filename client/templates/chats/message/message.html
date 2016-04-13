@@ -1,0 +1,15 @@
+<div class="message-wrapper">
+    <div class="message"
+         ng-class="message.userId === $auth.currentUser._id ? 'message-mine' : 'message-other'">
+        <ng-switch on="message.type">
+            <div ng-switch-when="text" class="text">{{message.data}}</div>
+            <div ng-switch-when="picture" class="picture">
+
+                <img ng-src="{{getImageUrl(message.data) }}"
+                     ng-click="photoBrowserStandalone(message.data)">
+            </div>
+        </ng-switch>
+        <span class="message-timestamp">{{message.timestamp | amDateFormat: 'HH:MM'}}</span>
+    </div>
+</div>
+

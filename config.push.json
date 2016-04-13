@@ -1,0 +1,24 @@
+{
+  "apn" : {
+    "passphrase": "whiteboard29",
+    "key": "ios/apn-production/FollowUpChat_Key.pem",
+    "cert": "ios/apn-production/FollowUpChat_Cert.pem",
+    "production": true
+  },
+  "apn-dev": {
+    "passphrase": "whiteboard29",
+    "key": "ios/apn-development/FollowupChat_Dev.pem",
+    "cert": "ios/apn-development/followupchat_aps_development.pem"
+  },
+  "gcm": {
+    "apiKey": "AIzaSyDtX28gfR3c0d_sQ-pBEDt52lD0mlXCAwQ",
+    "projectNumber": "821295326987"
+  },
+  "production": true,
+   "badge": true,
+   "sound": true,
+   "alert": true,
+   "vibrate": true
+  // "sendInterval": 15000,  Configurable interval between sending notifications
+  // "sendBatchSize": 1  Configurable number of notifications to send per batch
+}

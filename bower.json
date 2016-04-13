@@ -1,0 +1,23 @@
+{
+  "name": "SmartiDog",
+  "version": "0.0.1",
+  "dependencies": {
+    "ngCordova": "0.1.23-alpha",
+    "ngInfiniteScroll": "1.2.2"
+  },
+  "ignoredDependencies": [
+    "angular", "jquery"
+  ],
+  "overrides": {
+    "angular": {
+      "main": []
+    },
+    "jquery": {
+      "main": []
+    },
+    "ngInfiniteScroll": {
+      "arch": [ "client" ]
+    }
+  },
+  "private": true
+}
